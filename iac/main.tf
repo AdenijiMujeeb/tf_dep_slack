@@ -65,7 +65,7 @@ resource "google_project_service" "cloud-composer" {
 
 # Cloud Composer Environment
 module "cloud-composer" {
-  source     = "./cloud-composer"
+  source     = "./iac/cloud-composer"
   count      = local.cloud_composer_enabled
   project_id = var.project_id
   region     = var.region
