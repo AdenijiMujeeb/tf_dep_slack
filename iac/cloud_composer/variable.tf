@@ -2,10 +2,10 @@ locals {
   composer_name = "${var.project_id}-composer-test"
 }
 
-# variable "project_id" {
-  description = "Your GCP Project ID"
-  default     = "tf-etl-spark-360700"
-  type        = string
+# # variable "project_id" {
+#   description = "Your GCP Project ID"
+#   default     = "tf-etl-spark-360700"
+#   type        = string
 
 
 variable "region" {
