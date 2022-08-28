@@ -100,15 +100,16 @@ resource "google_composer_environment" "composer_environment" {
   name    = local.composer_name
   region  = var.region
   project = var.project_id
-
-  config {
-
-    software_config {
-      image_version = "composer-2-airflow-2"
-      airflow_config_overrides = {
-        core-dags_are_paused_at_creation = "True"
-      }
-    }
-    environment_size = "ENVIRONMENT_SIZE_SMALL"
-  }
 }
+
+#   config {
+
+#     software_config {
+#       image_version = "composer-2-airflow-2"
+#       airflow_config_overrides = {
+#         core-dags_are_paused_at_creation = "True"
+#       }
+#     }
+#     environment_size = "ENVIRONMENT_SIZE_SMALL"
+#   }
+# }
