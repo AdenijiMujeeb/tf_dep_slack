@@ -2,5 +2,5 @@
 set -o errexit
 
 # initialization of terraform
-terraform init
+terraform init -upgrade
 terraform get
