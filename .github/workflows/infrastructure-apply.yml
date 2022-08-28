@@ -18,7 +18,7 @@ defaults:
     shell: bash
     working-directory: ./iac
     
-# Job starting to run
+# Job starting to run now
 jobs:
   terraform_plan:
     name: 'Terraform Plan'
